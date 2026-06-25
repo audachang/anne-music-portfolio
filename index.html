@@ -206,24 +206,32 @@
   .trophy-feature img{width:100%;height:auto;display:block;transition:transform .5s ease}
   .trophy-feature:hover img{transform:scale(1.04)}
 
+  /* ---------- Choir gallery ---------- */
+  .choir-gallery{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;
+    max-width:720px;margin:0 auto;
+  }
+  .choir-gallery a{
+    display:block;border-radius:14px;overflow:hidden;
+    border:4px solid #fff;box-shadow:0 8px 22px var(--shadow);
+  }
+  .choir-gallery a:first-child{grid-column:1 / -1}
+  .choir-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .choir-gallery a:hover img{transform:scale(1.05)}
+  @media(max-width:560px){.choir-gallery{grid-template-columns:1fr}.choir-gallery a:first-child{grid-column:auto}}
+
   /* ---------- Video list ---------- */
-  .video-list{max-width:680px;margin:0 auto;display:grid;gap:14px}
-  .video-card{
-    display:flex;align-items:center;gap:16px;text-decoration:none;
-    background:var(--cream);border:1px solid var(--line);border-radius:14px;
-    padding:16px 22px;box-shadow:0 4px 12px var(--shadow);
-    transition:transform .2s, box-shadow .2s, border-color .2s;
+  /* ---------- Video grid (inline players) ---------- */
+  .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
+  .video-item{margin:0}
+  .video-item video{
+    width:100%;aspect-ratio:16/9;display:block;background:#000;border-radius:14px;
+    box-shadow:0 8px 22px var(--shadow);border:4px solid #fff;
   }
-  section:nth-of-type(even) .video-card{background:#fff}
-  .video-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px var(--shadow);border-color:var(--gold-soft)}
-  .video-card .vplay{
-    flex:0 0 auto;width:42px;height:42px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    background:var(--rose);color:#fff;font-size:1rem;padding-left:3px;
-  }
-  .video-card .vtext{display:flex;flex-direction:column}
-  .video-card .vtitle{font-family:"Noto Serif TC",serif;font-weight:600;color:var(--ink);font-size:1.06rem}
-  .video-card .vsub{color:var(--ink-soft);font-size:.88rem}
+  .video-item figcaption{display:flex;flex-direction:column;text-align:center;margin-top:12px}
+  .video-item .vtitle{font-family:"Noto Serif TC",serif;font-weight:600;color:var(--ink);font-size:1.06rem}
+  .video-item .vsub{color:var(--ink-soft);font-size:.88rem}
+  @media(max-width:640px){.video-grid{grid-template-columns:1fr;gap:20px}}
 
   /* ---------- Link buttons ---------- */
   .btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
@@ -267,7 +275,7 @@
   <div class="ornament">&#9835; &#10086; &#9834;</div>
   <h1>張安耘</h1>
   <div class="en">Anne&rsquo;s Music Journey</div>
-  <p class="tagline">從紅蘋果班的第一個音符，到舞台上的每一次演奏 —— 這裡記錄了一段以音樂相伴成長的旅程。</p>
+  <p class="tagline">從紅蘋果班的第一個音符，到卡內基音樂廳的舞台 —— 這裡記錄了一段以音樂相伴成長的旅程。</p>
   <div class="born">2015 年 2 月 20 日生</div>
 </header>
 
@@ -278,6 +286,7 @@
     <a href="#yamaha">Yamaha 歷程</a>
     <a href="#piano">鋼琴</a>
     <a href="#clarinet">單簧管</a>
+    <a href="#choir">合唱團</a>
     <a href="#awards">比賽獲獎</a>
     <a href="#gallery">獎盃相簿</a>
     <a href="#videos">演奏影片</a>
@@ -311,6 +320,11 @@
         <div class="tl-when">2025 年 8 月 &ndash; 2026 年 6 月</div>
         <div class="tl-title">單簧管 Clarinet</div>
         <div class="tl-body">展開全新的管樂旅程，學習單簧管，體驗不同樂器的音色與合奏的樂趣。</div>
+      </div>
+      <div class="tl-item rose">
+        <div class="tl-when">2025 年 8 月起 ‧ 2026 年 3 月登台</div>
+        <div class="tl-title">加州晶晶合唱團 ‧ 卡內基音樂廳</div>
+        <div class="tl-body">加入加州晶晶合唱團，並於 2026 年 3 月隨團於紐約卡內基音樂廳（Carnegie Hall）演出。</div>
       </div>
     </div>
   </div>
@@ -386,6 +400,32 @@
   </div>
 </section>
 
+<!-- ===================== CHOIR ===================== -->
+<section id="choir">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Choir &#8231; Carnegie Hall</div>
+      <h2>加州晶晶合唱團</h2>
+    </div>
+    <p class="lead">
+      2025 年 8 月起，安耘加入<strong>加州晶晶合唱團</strong>，在合唱中體驗與夥伴齊聲歌唱的感動。
+      2026 年 3 月，她隨團遠赴紐約，登上世界知名的<strong>卡內基音樂廳（Carnegie Hall）</strong>舞台演出 ——
+      在這座無數音樂家夢想的殿堂裡，留下了難忘的一頁。
+    </p>
+    <div class="choir-gallery">
+      <a href="images/choir/carnegie1.jpg" target="_blank" rel="noopener">
+        <img src="images/choir/carnegie1.jpg" alt="加州晶晶合唱團於卡內基音樂廳舞台全體演出" loading="lazy">
+      </a>
+      <a href="images/choir/carnegie3.jpg" target="_blank" rel="noopener">
+        <img src="images/choir/carnegie3.jpg" alt="合唱團員手撫胸口齊聲歌唱" loading="lazy">
+      </a>
+      <a href="images/choir/carnegie2.jpg" target="_blank" rel="noopener">
+        <img src="images/choir/carnegie2.jpg" alt="安耘與合唱團員身著黑色禮服於台上" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== AWARDS ===================== -->
 <section id="awards">
   <div class="wrap">
@@ -457,37 +497,40 @@
       <h2>演奏影片</h2>
     </div>
     <p class="lead">
-      安耘的部分比賽與演奏實況影片（連結至 SmugMug，點擊即可觀看）。
+      安耘的部分比賽與演奏實況影片，可直接在下方播放。
     </p>
-    <div class="video-list">
-      <a class="video-card" href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-RRpHnbV" target="_blank" rel="noopener">
-        <span class="vplay">&#9654;</span>
-        <span class="vtext">
-          <span class="vtitle">2023 卓越盃 ‧ 決賽演奏</span>
-          <span class="vsub">鋼琴演奏實況（含聲音）</span>
-        </span>
-      </a>
-      <a class="video-card" href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-cXLssmB" target="_blank" rel="noopener">
-        <span class="vplay">&#9654;</span>
-        <span class="vtext">
-          <span class="vtitle">2023 卓越盃 ‧ 頒獎典禮</span>
-          <span class="vsub">頒獎典禮紀錄影片</span>
-        </span>
-      </a>
-      <a class="video-card" href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-HqM6xR4" target="_blank" rel="noopener">
-        <span class="vplay">&#9654;</span>
-        <span class="vtext">
-          <span class="vtitle">2024 年 8 月 ‧ 演奏</span>
-          <span class="vsub">比賽演奏影片</span>
-        </span>
-      </a>
-      <a class="video-card" href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-d2CpQLC" target="_blank" rel="noopener">
-        <span class="vplay">&#9654;</span>
-        <span class="vtext">
-          <span class="vtitle">2024 年 11 月 ‧ Khachaturian 演奏</span>
-          <span class="vsub">哈察都量作品演奏影片</span>
-        </span>
-      </a>
+    <div class="video-grid">
+      <figure class="video-item">
+        <video controls preload="none" poster="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-RRpHnbV/0/L2H4fgqHMjQGCFwHDx5TW7RCT78N4pk54bJmjjkMh/L/round2_play_high-res_with_audio-L.jpg">
+          <source src="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-RRpHnbV/0/MbQ9FD7mWHzMzGnvQ8tL6H57KPLWzsSWXLcnJn5QQ/1280/round2_play_high-res_with_audio-1280.mp4" type="video/mp4">
+          您的瀏覽器不支援內嵌影片，請<a href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-RRpHnbV" target="_blank" rel="noopener">前往 SmugMug 觀看</a>。
+        </video>
+        <figcaption><span class="vtitle">2023 卓越盃 ‧ 決賽演奏</span><span class="vsub">鋼琴演奏實況（含聲音）</span></figcaption>
+      </figure>
+
+      <figure class="video-item">
+        <video controls preload="none" poster="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-cXLssmB/0/KRMs397VQcgqWZjfpzRR37L4RdkGXLq53pRknpTZd/L/video_with_audio-L.jpg">
+          <source src="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-cXLssmB/0/Ld6wFbSNf8Nzjs7DM6jXCSwFPXg4HGZcC9f9c6v6x/1280/video_with_audio-1280.mp4" type="video/mp4">
+          您的瀏覽器不支援內嵌影片，請<a href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-cXLssmB" target="_blank" rel="noopener">前往 SmugMug 觀看</a>。
+        </video>
+        <figcaption><span class="vtitle">2023 卓越盃 ‧ 頒獎典禮</span><span class="vsub">頒獎典禮紀錄影片</span></figcaption>
+      </figure>
+
+      <figure class="video-item">
+        <video controls preload="none" poster="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-HqM6xR4/0/KqMZfHdXJtzkXXk7BmJB6B2Fh4BzGDsvZr4xzsS8L/M/VID20240810100835-M.jpg">
+          <source src="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-HqM6xR4/0/KTcTgMnLpbKrpLcBT3NscGssfT9dXFCnXFt3jXBP4/1280/VID20240810100835-1280.mp4" type="video/mp4">
+          您的瀏覽器不支援內嵌影片，請<a href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-HqM6xR4" target="_blank" rel="noopener">前往 SmugMug 觀看</a>。
+        </video>
+        <figcaption><span class="vtitle">2024 年 8 月 ‧ 演奏</span><span class="vsub">比賽演奏影片</span></figcaption>
+      </figure>
+
+      <figure class="video-item">
+        <video controls preload="none" poster="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-d2CpQLC/0/LLVNgrHj938rJX8CBHdgRbX9HxnVbZw5drRSPDLvk/L/VID20241110085616-L.jpg">
+          <source src="https://photos.smugmug.com/For-Sharing/Annes-music-competitions/i-d2CpQLC/0/KsRhchW3ShnLC75qn3VrQSbC2CVmxrrV6r7v3ZTCf/1280/VID20241110085616-1280.mp4" type="video/mp4">
+          您的瀏覽器不支援內嵌影片，請<a href="https://annechang.smugmug.com/For-Sharing/Annes-music-competitions/i-d2CpQLC" target="_blank" rel="noopener">前往 SmugMug 觀看</a>。
+        </video>
+        <figcaption><span class="vtitle">2024 年 11 月 ‧ Khachaturian 演奏</span><span class="vsub">哈察都量作品演奏影片</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
