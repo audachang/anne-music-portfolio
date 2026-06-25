@@ -231,6 +231,18 @@
   .choir-gallery a:hover img{transform:scale(1.05)}
   @media(max-width:560px){.choir-gallery{grid-template-columns:1fr}.choir-gallery a:first-child{grid-column:auto}}
 
+  /* ---------- Photo placeholders ---------- */
+  .photo-ph{
+    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:4/3;border-radius:14px;
+    border:2px dashed var(--gold-soft);
+    background:repeating-linear-gradient(45deg,var(--cream-2),var(--cream-2) 12px,var(--cream) 12px,var(--cream) 24px);
+    color:var(--ink-soft);text-decoration:none;cursor:default;
+  }
+  .photo-ph .ph-inner{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+  .photo-ph .ph-icon{font-size:2rem;opacity:.7}
+  .photo-ph .ph-text{font-size:.9rem;line-height:1.5;color:var(--gold)}
+
   /* ---------- Video list ---------- */
   /* ---------- Video grid (inline players) ---------- */
   .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
@@ -300,7 +312,8 @@
     <a href="#yamaha">Yamaha 歷程</a>
     <a href="#piano">鋼琴</a>
     <a href="#clarinet">單簧管</a>
-    <a href="#choir">合唱團</a>
+    <a href="#school-choir">學校合唱團</a>
+    <a href="#choir">加州合唱團</a>
     <a href="#awards">比賽獲獎</a>
     <a href="#gallery">獎盃相簿</a>
     <a href="#videos">演奏影片</a>
@@ -334,6 +347,11 @@
         <div class="tl-when">2025 年 8 月 &ndash; 2026 年 6 月</div>
         <div class="tl-title">單簧管 Clarinet</div>
         <div class="tl-body">展開全新的管樂旅程，學習單簧管，體驗不同樂器的音色與合奏的樂趣。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2024 年 ‧ 全年</div>
+        <div class="tl-title">大崙國小合唱團</div>
+        <div class="tl-body">於大崙國小參加學校合唱團，全年投入練習、公開表演，並代表參加合唱比賽。</div>
       </div>
       <div class="tl-item rose">
         <div class="tl-when">2025 年 8 月起 ‧ 2026 年 3 月登台</div>
@@ -411,6 +429,32 @@
       2025 年 8 月起，安耘展開了全新的管樂旅程，開始學習單簧管（至 2026 年 6 月）。
       從鍵盤到吹管，她體驗了不同樂器的音色、呼吸與表現方式，也讓音樂世界更加開闊。
     </p>
+  </div>
+</section>
+
+<!-- ===================== SCHOOL CHOIR (大崙國小) ===================== -->
+<section id="school-choir">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">School Choir</div>
+      <h2>大崙國小合唱團</h2>
+    </div>
+    <p class="lead">
+      2024 年，安耘加入<strong>大崙國小合唱團</strong>，整整一年隨團投入練習。
+      除了平日紮實的歌唱訓練，她也參與了多場公開<strong>表演</strong>，並代表學校參加<strong>合唱比賽</strong>，
+      在團隊合作中學會傾聽彼此、合而為一的歌聲。
+    </p>
+    <div class="choir-gallery">
+      <a class="photo-ph" aria-label="大崙國小合唱團照片（待補）">
+        <span class="ph-inner"><span class="ph-icon">&#127908;</span><span class="ph-text">合唱團照片<br>（待補）</span></span>
+      </a>
+      <a class="photo-ph" aria-label="大崙國小合唱團表演照片（待補）">
+        <span class="ph-inner"><span class="ph-icon">&#127925;</span><span class="ph-text">表演照片<br>（待補）</span></span>
+      </a>
+      <a class="photo-ph" aria-label="大崙國小合唱團比賽照片（待補）">
+        <span class="ph-inner"><span class="ph-icon">&#127942;</span><span class="ph-text">比賽照片<br>（待補）</span></span>
+      </a>
+    </div>
   </div>
 </section>
 
