@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>張安耘 ‧ 音樂歷程 | Anne's Music Journey</title>
+<meta name="description" content="張安耘的音樂學習歷程：Yamaha 音樂教育系統、個別鋼琴課、單簧管，以及歷年比賽獲獎紀錄。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3a2f3a;
+    --ink-soft:#6c5b6b;
+    --gold:#b08d4f;
+    --gold-soft:#cdb079;
+    --rose:#c98a9a;
+    --rose-soft:#f3e3e6;
+    --cream:#fbf7f1;
+    --cream-2:#f5eee3;
+    --line:#e7dccb;
+    --shadow:rgba(90,70,60,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans TC",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.85;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Header / Hero ---------- */
+  header.hero{
+    position:relative;
+    text-align:center;
+    padding:96px 24px 72px;
+    background:
+      radial-gradient(circle at 50% -20%, rgba(205,176,121,.18), transparent 60%),
+      linear-gradient(180deg,var(--cream-2),var(--cream));
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .hero .ornament{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2rem;color:var(--gold);letter-spacing:.5em;
+    margin-bottom:18px;opacity:.85;
+  }
+  .hero h1{
+    font-family:"Noto Serif TC",serif;
+    font-weight:600;
+    font-size:clamp(2.4rem,7vw,3.8rem);
+    letter-spacing:.08em;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+  .hero .en{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;
+    font-size:1.3rem;
+    color:var(--gold);
+    letter-spacing:.12em;
+    margin-bottom:22px;
+  }
+  .hero .tagline{
+    color:var(--ink-soft);
+    font-size:1.02rem;
+    max-width:540px;margin:0 auto;
+  }
+  .hero .born{
+    display:inline-block;margin-top:20px;
+    font-size:.9rem;color:var(--gold);
+    border:1px solid var(--gold-soft);
+    border-radius:999px;padding:5px 18px;
+    letter-spacing:.08em;
+  }
+
+  /* ---------- Nav ---------- */
+  nav.toc{
+    position:sticky;top:0;z-index:20;
+    background:rgba(251,247,241,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    text-align:center;
+  }
+  nav.toc a{
+    display:inline-block;
+    color:var(--ink-soft);
+    text-decoration:none;
+    font-size:.92rem;
+    padding:14px 14px;
+    letter-spacing:.05em;
+    transition:color .2s;
+  }
+  nav.toc a:hover{color:var(--gold)}
+
+  /* ---------- Sections ---------- */
+  section{padding:64px 0}
+  section:nth-of-type(even){background:var(--cream-2)}
+  .sec-head{text-align:center;margin-bottom:44px}
+  .sec-head .kicker{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:1.05rem;
+    color:var(--gold);letter-spacing:.18em;
+    text-transform:uppercase;
+  }
+  .sec-head h2{
+    font-family:"Noto Serif TC",serif;
+    font-weight:600;
+    font-size:clamp(1.6rem,4.5vw,2.2rem);
+    letter-spacing:.06em;
+    margin-top:6px;color:var(--ink);
+  }
+  .sec-head h2::after{
+    content:"";display:block;width:48px;height:2px;
+    background:var(--gold-soft);margin:16px auto 0;
+  }
+  .lead{
+    max-width:660px;margin:0 auto 28px;
+    text-align:center;color:var(--ink-soft);
+    font-size:1.04rem;
+  }
+
+  /* ---------- Timeline ---------- */
+  .timeline{position:relative;max-width:680px;margin:0 auto;padding-left:34px}
+  .timeline::before{
+    content:"";position:absolute;left:9px;top:8px;bottom:8px;
+    width:2px;background:linear-gradient(var(--gold-soft),var(--rose-soft));
+  }
+  .tl-item{position:relative;margin-bottom:34px}
+  .tl-item::before{
+    content:"";position:absolute;left:-33px;top:6px;
+    width:14px;height:14px;border-radius:50%;
+    background:var(--cream);border:3px solid var(--gold);
+  }
+  .tl-item.rose::before{border-color:var(--rose)}
+  .tl-when{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--gold);font-size:1rem;letter-spacing:.05em;
+    font-weight:600;
+  }
+  .tl-title{
+    font-family:"Noto Serif TC",serif;font-weight:600;
+    font-size:1.18rem;color:var(--ink);margin:2px 0 6px;
+  }
+  .tl-body{color:var(--ink-soft);font-size:1rem}
+
+  /* ---------- Yamaha stage cards ---------- */
+  .stages{display:flex;flex-direction:column;gap:0;max-width:680px;margin:0 auto}
+  .stage{
+    display:flex;align-items:flex-start;gap:18px;
+    padding:18px 0;border-bottom:1px dashed var(--line);
+  }
+  .stage:last-child{border-bottom:none}
+  .stage .num{
+    flex:0 0 auto;width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--rose-soft);color:var(--rose);
+    font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.15rem;
+  }
+  .stage .info h4{
+    font-family:"Noto Serif TC",serif;font-weight:600;
+    font-size:1.1rem;color:var(--ink);
+  }
+  .stage .info .age{color:var(--gold);font-size:.86rem;letter-spacing:.04em}
+  .stage .info p{color:var(--ink-soft);font-size:.96rem;margin-top:3px}
+  .stage.peak .num{background:var(--gold);color:#fff}
+  .stage.peak .info h4{color:var(--gold)}
+
+  /* ---------- Awards ---------- */
+  .awards{display:grid;gap:20px;max-width:720px;margin:0 auto}
+  .award{
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:22px 24px;
+    box-shadow:0 6px 18px var(--shadow);
+    position:relative;
+    border-left:4px solid var(--gold);
+  }
+  section:nth-of-type(even) .award{background:#fff}
+  .award .year{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--gold);font-weight:600;font-size:1rem;letter-spacing:.06em;
+  }
+  .award h4{
+    font-family:"Noto Serif TC",serif;font-weight:600;
+    font-size:1.15rem;color:var(--ink);margin:3px 0 8px;
+  }
+  .award .rank{
+    display:inline-block;background:var(--rose-soft);color:var(--rose);
+    font-weight:500;border-radius:999px;padding:3px 14px;
+    font-size:.9rem;margin-bottom:8px;letter-spacing:.05em;
+  }
+  .award p{color:var(--ink-soft);font-size:.96rem}
+
+  /* ---------- Gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;max-width:760px;margin:0 auto}
+  .gallery a{display:block;border-radius:12px;overflow:hidden;box-shadow:0 5px 14px var(--shadow);aspect-ratio:3/4;border:3px solid #fff}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+  .gallery a:hover img{transform:scale(1.06)}
+
+  /* ---------- Link buttons ---------- */
+  .btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    text-decoration:none;font-size:.96rem;letter-spacing:.04em;
+    padding:12px 26px;border-radius:999px;transition:all .25s;
+  }
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:0 6px 16px rgba(176,141,79,.3)}
+  .btn-gold:hover{background:#9a7a40;transform:translateY(-2px)}
+  .btn-rose{background:#fff;color:var(--rose);border:1.5px solid var(--rose)}
+  .btn-rose:hover{background:var(--rose-soft)}
+  .btn-ghost{background:transparent;color:var(--ink-soft);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--gold-soft);color:var(--gold)}
+
+  /* ---------- Media / video placeholders ---------- */
+  .media-list{max-width:680px;margin:0 auto;display:grid;gap:14px}
+  .media-card{
+    display:flex;align-items:center;gap:16px;
+    background:var(--cream);border:1px dashed var(--gold-soft);
+    border-radius:12px;padding:16px 20px;
+  }
+  section:nth-of-type(even) .media-card{background:#fff}
+  .media-card .ic{font-size:1.5rem}
+  .media-card .mtext h4{font-family:"Noto Serif TC",serif;font-weight:600;color:var(--ink);font-size:1.02rem}
+  .media-card .mtext p{color:var(--ink-soft);font-size:.88rem}
+  .media-card .mtext a{color:var(--gold)}
+
+  /* ---------- Footer ---------- */
+  footer{
+    text-align:center;padding:54px 24px 60px;
+    background:linear-gradient(180deg,var(--cream),var(--cream-2));
+    border-top:1px solid var(--line);
+  }
+  footer .note{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:1.2rem;margin-bottom:10px}
+  footer .small{color:var(--ink-soft);font-size:.85rem}
+  .quote{
+    font-family:"Noto Serif TC",serif;font-weight:400;
+    text-align:center;max-width:600px;margin:0 auto 6px;
+    color:var(--ink);font-size:1.1rem;line-height:2;
+  }
+
+  @media(max-width:560px){
+    section{padding:48px 0}
+    .hero{padding:72px 20px 56px}
+    nav.toc a{padding:12px 9px;font-size:.84rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="ornament">&#9835; &#10086; &#9834;</div>
+  <h1>張安耘</h1>
+  <div class="en">Anne&rsquo;s Music Journey</div>
+  <p class="tagline">從紅蘋果班的第一個音符，到舞台上的每一次演奏 —— 這裡記錄了一段以音樂相伴成長的旅程。</p>
+  <div class="born">2015 年 2 月 20 日生</div>
+</header>
+
+<!-- ===================== NAV ===================== -->
+<nav class="toc">
+  <div class="wrap">
+    <a href="#about">關於安耘</a>
+    <a href="#yamaha">Yamaha 歷程</a>
+    <a href="#piano">鋼琴</a>
+    <a href="#clarinet">單簧管</a>
+    <a href="#awards">比賽獲獎</a>
+    <a href="#gallery">獎盃相簿</a>
+  </div>
+</nav>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Introduction</div>
+      <h2>關於安耘</h2>
+    </div>
+    <p class="lead">
+      安耘自幼便與音樂結緣。從學齡前進入 Yamaha 音樂教育系統開始，一路走過團體班的每一個階段，
+      再進入個別鋼琴課深入鑽研，並在 2025 年起拓展到管樂領域、學習單簧管。
+      多年的學習也帶來了一座座比賽獎盃 —— 而比獎項更珍貴的，是她始終樂在其中的那份熱情。
+    </p>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-when">學齡前 &ndash; 啟蒙</div>
+        <div class="tl-title">Yamaha 音樂教育系統</div>
+        <div class="tl-body">從最小的紅蘋果班開始，循序走過 Yamaha 團體課程，直到進入個人班前的最高階段。</div>
+      </div>
+      <div class="tl-item rose">
+        <div class="tl-when">&hellip; &ndash; 2025 年 7 月</div>
+        <div class="tl-title">個別鋼琴課</div>
+        <div class="tl-body">完成 Yamaha 系統後，轉入一對一個別鋼琴課，持續精進演奏技巧與音樂表現力。</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-when">2025 年 8 月 &ndash; 2026 年 6 月</div>
+        <div class="tl-title">單簧管 Clarinet</div>
+        <div class="tl-body">展開全新的管樂旅程，學習單簧管，體驗不同樂器的音色與合奏的樂趣。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== YAMAHA ===================== -->
+<section id="yamaha">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Foundation</div>
+      <h2>Yamaha 音樂教育系統</h2>
+    </div>
+    <p class="lead">
+      Yamaha 音樂教育系統依孩子的身心成長設計「適齡教育」課程，全國統一教材、循序漸進。
+      安耘從最小的紅蘋果班起步，完整走過以下各階段，直到進入個人班前的最高等級。
+    </p>
+    <div class="stages">
+      <div class="stage">
+        <div class="num">1</div>
+        <div class="info">
+          <h4>紅蘋果班</h4>
+          <div class="age">2.5 &ndash; 3 歲 ‧ 親子共學</div>
+          <p>在音樂遊戲中探索聲音，透過聆聽、歌唱與律動，培養最初的音感與對音樂的喜愛。</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="num">2</div>
+        <div class="info">
+          <h4>新幼兒班</h4>
+          <div class="age">3 &ndash; 6 歲 ‧ 團體班（第二年起併用個別班）</div>
+          <p>在聽覺迅速成長的黃金期，導入聆聽、感受與表現的課程，著重音感與聽力的培育，並開始接觸鍵盤彈奏與看譜。</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="num">3</div>
+        <div class="info">
+          <h4>兒童班</h4>
+          <div class="age">小一 &ndash; 小三 ‧ 團體班</div>
+          <p>建立積極自主的學習態度，挑戰與同學合奏，培養專注力與團隊默契，孕育豐富的演奏表現力。</p>
+        </div>
+      </div>
+      <div class="stage peak">
+        <div class="num">&#9733;</div>
+        <div class="info">
+          <h4>特別班（進階甄試班）</h4>
+          <div class="age">進入個人班前的最高階段 ‧ 需通過甄試</div>
+          <p>Yamaha 團體課程體系的最高等級，需通過進級甄試方能進入。完成此階段後，安耘銜接一對一個別鋼琴課程。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PIANO ===================== -->
+<section id="piano">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Piano</div>
+      <h2>個別鋼琴課</h2>
+    </div>
+    <p class="lead">
+      完成 Yamaha 系統後，安耘轉入一對一個別鋼琴課（至 2025 年 7 月），
+      在老師的指導下深入打磨技巧、詮釋與舞台表現。多年的鋼琴根基，
+      也成為她在各項鋼琴比賽中屢獲佳績的基礎。
+    </p>
+    <div class="media-list">
+      <div class="media-card">
+        <div class="ic">&#127929;</div>
+        <div class="mtext">
+          <h4>演奏影片</h4>
+          <p>（影片連結待補 —— 可在此放入 YouTube 或其他平台的演奏影片網址）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLARINET ===================== -->
+<section id="clarinet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Clarinet</div>
+      <h2>單簧管</h2>
+    </div>
+    <p class="lead">
+      2025 年 8 月起，安耘展開了全新的管樂旅程，開始學習單簧管（至 2026 年 6 月）。
+      從鍵盤到吹管，她體驗了不同樂器的音色、呼吸與表現方式，也讓音樂世界更加開闊。
+    </p>
+    <div class="media-list">
+      <div class="media-card">
+        <div class="ic">&#127932;</div>
+        <div class="mtext">
+          <h4>單簧管演奏影片</h4>
+          <p>（影片連結待補 —— 可在此放入單簧管演奏或合奏影片網址）</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AWARDS ===================== -->
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Achievements</div>
+      <h2>比賽獲獎紀錄</h2>
+    </div>
+    <p class="lead">
+      以下為安耘歷年參加音樂比賽的部分獲獎紀錄，獎盃與獎牌實照請見下方「獎盃相簿」。
+    </p>
+    <div class="awards">
+
+      <div class="award">
+        <div class="year">2023</div>
+        <h4>全國藝術錦標公開賽（PMOC）‧ 跨年齡組鋼琴二重奏</h4>
+        <span class="rank">優等獎</span>
+        <p>於全國性公開賽中，與夥伴合作的鋼琴二重奏獲頒優等獎，展現默契與合奏實力。</p>
+      </div>
+
+      <div class="award">
+        <div class="year">2023</div>
+        <h4>全國藝術錦標公開賽（PMOC）‧ 鋼琴項目</h4>
+        <span class="rank">銀獎 Second Class</span>
+        <p>同屆賽事中再獲銀獎（Second Class）肯定。</p>
+      </div>
+
+      <div class="award">
+        <div class="year">2024</div>
+        <h4>第二十四屆 桃花源盃音樂大賽 ‧ 鋼琴比賽組</h4>
+        <span class="rank">第三名</span>
+        <p>主辦單位：桃園市桃花源音樂協會。於鋼琴比賽組獲第三名佳績。</p>
+      </div>
+
+      <div class="award">
+        <div class="year">近年</div>
+        <h4>古典鋼琴獨奏 ‧ 兒童四年級組 國際音樂大賽</h4>
+        <span class="rank">第一名</span>
+        <p>參加古典鋼琴獨奏兒童四年級組國際音樂大賽，榮獲第一名。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Trophies &amp; Photos</div>
+      <h2>獎盃相簿</h2>
+    </div>
+    <p class="lead">
+      一座座獎盃與獎牌，是努力與熱愛的見證。點擊照片可放大檢視。
+    </p>
+    <div class="gallery">
+      <a href="images/competitions/20260625_195906.jpg" target="_blank" rel="noopener"><img src="images/competitions/20260625_195906.jpg" alt="安耘的音樂比賽獎盃與獎牌合影" loading="lazy"></a>
+      <a href="images/competitions/20260625_195912.jpg" target="_blank" rel="noopener"><img src="images/competitions/20260625_195912.jpg" alt="PMOC 全國藝術錦標公開賽 優等獎 獎盃" loading="lazy"></a>
+      <a href="images/competitions/20260625_195915.jpg" target="_blank" rel="noopener"><img src="images/competitions/20260625_195915.jpg" alt="PMOC 銀獎 Second Class 獎牌與獎盃" loading="lazy"></a>
+      <a href="images/competitions/20260625_195918.jpg" target="_blank" rel="noopener"><img src="images/competitions/20260625_195918.jpg" alt="桃花源盃音樂大賽 鋼琴比賽組 第三名 獎盃" loading="lazy"></a>
+      <a href="images/competitions/20260625_195920.jpg" target="_blank" rel="noopener"><img src="images/competitions/20260625_195920.jpg" alt="古典鋼琴獨奏國際音樂大賽 第一名 獎盃" loading="lazy"></a>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="https://www.smugmug.com/app/organize/For-Sharing/Annes-music-competitions" target="_blank" rel="noopener">&#128247; 前往 SmugMug 完整相簿</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p class="quote">&ldquo;音樂，是陪伴安耘長大的好夥伴。&rdquo;</p>
+  <p class="note">&#9835; Anne&rsquo;s Music Journey &#9835;</p>
+  <p class="small">&copy; 2026 張安耘 ‧ Anne Chang　|　以音樂記錄成長</p>
+</footer>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
